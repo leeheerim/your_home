@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;                /* 타겟 요소의 높이값, 반응형웹 제작시 유용  */
+    display: flex;                /* body 내용물 수평으로 나열                 */
+    justify-content: center;      /* body 내용물 가운데로 맞춤                 */
+    align-items: center;          /* body 내용물 위,아래 간격 중간으로 맞춤    */
+    background: white;
+    }
+
+.slider {
+    width: 800px;
+    height: 500px;
+    overflow: hidden; /* 800 x 500 이상의 내용은 잘려서 나옴*/
+}
+
+.slides {
+    height: 500px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+/*  이미지가 슬라이드 되어 넘어가는 시간 설정
+    아래의 경우 1초동안 다음 페이지로 넘어감 
+    값을 많이 줄수록 느리게 넘어감            */
+.slide {
+    transition: 1s;
+}
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+/* radio 버튼이 checked 상태가 될 경우 넘어가는 margin 값 설정 */
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}

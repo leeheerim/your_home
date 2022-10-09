@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider">
+
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first"> <img src="slider7.jpg" alt=""> </div>
+            <div class="slide">       <img src="slider2.jpg" alt=""> </div>
+            <div class="slide">       <img src="slider3.jpg" alt=""> </div>
+            <div class="slide">       <img src="slider8.jpg" alt=""> </div>
+
+        </div>
+    </div>
+
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000); /* 5000은 5초, 3000은 3초*/
+    </script>
+</body>
+</html>
