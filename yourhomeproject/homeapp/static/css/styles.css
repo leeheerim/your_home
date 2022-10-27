@@ -11701,12 +11701,12 @@ body {
 }
 
 main {
-  margin: 0;
+  margin: 30px;
   padding: 0;
   height: 100vh;                /* 타겟 요소의 높이값, 반응형웹 제작시 유용  */
   display: flex;                /* body 내용물 수평으로 나열                 */
   justify-content: center;      /* body 내용물 가운데로 맞춤                 */
-  align-items: center;          /* body 내용물 위,아래 간격 중간으로 맞춤    */
+  align-items: flex-start;          /* body 내용물 위,아래 간격 중간으로 맞춤    */
   background: white;
   }
 

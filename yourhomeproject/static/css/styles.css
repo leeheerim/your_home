@@ -11701,7 +11701,7 @@ body {
 }
 
 main {
-  margin: 30px;
+  margin: 10px;
   padding: 0;
   height: 100vh;                /* 타겟 요소의 높이값, 반응형웹 제작시 유용  */
   display: flex;                /* body 내용물 수평으로 나열                 */
@@ -11711,9 +11711,8 @@ main {
   }
 
 .slider {
-  position: static;
   width: 800px;
-  height: 100px;
+  height: 500px;
   overflow: hidden; /* 800 x 500 이상의 내용은 잘려서 나옴*/
 }
 
