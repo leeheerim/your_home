@@ -1,7 +1,7 @@
 from django.db import models
-
+from django.db.models import Q
 # Create your models here.
-class Table(models.Model):
+class table(models.Model):
     번호=models.FloatField()
     주택관리번호=models.FloatField()
     공고번호=models.FloatField()

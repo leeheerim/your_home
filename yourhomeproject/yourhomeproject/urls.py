@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import homeapp.views
-
+from django_filters.views import object_filter
+from homeapp.models import Product
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',homeapp.views.home,name='home'),
+    path('list/', object_filter, {'model': Product}, name="product-list"),
 ]
