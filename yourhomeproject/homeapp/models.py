@@ -36,3 +36,11 @@ class school(models.Model):
     소재지도로명주소=models.CharField(max_length=30)
     위도=models.FloatField()
     경도=models.FloatField()
+
+class park(models.Model):
+    관리번호=models.CharField(max_length=20)
+    공원명=models.CharField(max_length=30)
+    공원구분=models.CharField(max_length=20)
+    소재지지번주소=models.CharField(max_length=30)
+    위도=models.FloatField()
+    경도=models.FloatField()
