@@ -10,7 +10,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Sidenav Light - SB Admin</title>
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/styles.css' %}?after" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
@@ -52,8 +52,19 @@
             </ul>
         </nav>
         {% include "sidenav.html" %}
+       
         <div id="layoutSidenav_content">
             <main>
+                <p>외형을 결정하세요:</p>
+                <div class="check1">
+                    <input type="checkbox" id="scales" name="scales" checked>
+                    <label for="scales">비늘</label>
+                </div>
+                <div class="check2">
+                    <input type="checkbox" id="horns" name="horns">
+                    <label for="horns">뿔</label>
+                </div>
+                
                 <div class="slider">
     
                     <div class="slides">

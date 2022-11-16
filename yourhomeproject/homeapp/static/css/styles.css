@@ -11709,8 +11709,15 @@ main {
   align-items: flex-start;          /* body 내용물 위,아래 간격 중간으로 맞춤    */
   background: white;
   }
+  .check1{
+    padding:60px;
+  }
+  .check2{
+    padding:5px;
+  }
 
 .slider {
+  padding:10px;
   width: 800px;
   height: 500px;
   overflow: hidden; /* 800 x 500 이상의 내용은 잘려서 나옴*/
