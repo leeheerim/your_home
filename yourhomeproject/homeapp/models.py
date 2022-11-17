@@ -2,13 +2,16 @@ from django.db import models
 from django.db.models import Q
 # Create your models here.
 class table(models.Model):
-    번호=models.FloatField()
-    주택관리번호=models.FloatField()
-    공고번호=models.FloatField()
     주택명=models.CharField(max_length=20)
+    모집공고일=models.CharField(max_length=20)
+    청약접수시작일=models.CharField(max_length=20)
+    당첨자발표일=models.CharField(max_length=20)
+    계약시작일=models.CharField(max_length=20)
+    입주예정월=models.CharField(max_length=20)
     위도=models.FloatField()
     경도=models.FloatField()
     공급위치=models.CharField(max_length=30)
+    공급규모=models.FloatField()
 
 class maket(models.Model):
     번호=models.FloatField()
