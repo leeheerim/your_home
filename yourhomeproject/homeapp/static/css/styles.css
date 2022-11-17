@@ -11709,15 +11709,19 @@ main {
   align-items: flex-start;          /* body 내용물 위,아래 간격 중간으로 맞춤    */
   background: white;
   }
-  .check {
-    margin: 60px;
-    width:800px;
-    height:600px;
+.check {
+  margin: 60px;
+  width:800px;
+  height:600px;
+}
+.time{
+  position:absolute;
+  top: 730px;
 }
 .slider {
   position:absolute;
   top: 750px;
-  padding:60px;
+  padding: 60px;
   width: 800px;
   height: 500px;
   overflow: hidden; /* 800 x 500 이상의 내용은 잘려서 나옴*/
@@ -11725,35 +11729,15 @@ main {
 
 .slides {
   height: 500px;
-  display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid dimgrey;
 }
-.slides input {
-  display: none;
-}
-/*  이미지가 슬라이드 되어 넘어가는 시간 설정
-  아래의 경우 1초동안 다음 페이지로 넘어감 
-  값을 많이 줄수록 느리게 넘어감            */
-.slide {
-  transition: 1s;
-}
-.slide img {
-  width: 800px;
+
+#slides>ul{
   height: 500px;
+  font-size: 0;
 }
-/* radio 버튼이 checked 상태가 될 경우 넘어가는 margin 값 설정 */
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-#radio2:checked ~ .first{
-  margin-left: -100%;
-}
-#radio3:checked ~ .first{
-  margin-left: -200%;
-}
-#radio4:checked ~ .first{
-  margin-left: -300%;
-}
-#sheet0 {
-    position: relative;
-    height: 300px;
+#slides>ul>li{
+  display: inline-block;
+  font-size: 0;
 }
