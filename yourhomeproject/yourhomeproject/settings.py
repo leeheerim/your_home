@@ -13,20 +13,17 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 
-import json
-from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ROOT_DIR = os.path.dirname(BASE_DIR)
-SECRET_DEBUG_FILE = os.path.join(ROOT_DIR, '.config_secret/settings_debug.json')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-@b2z3-+8i)3mdcy&zcgo#nl+a)#7jv&1a#=22e-esx@jcf39_!'
-SECRET_DEBUG_FILE=os.path.join(ROOT_DIR,'.config_secret/settings_debug.json')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
